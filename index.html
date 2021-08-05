@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="sideBar">
+            <img src="sidebar.png" id="sideBarImg" onclick="toggleSideBar()">
+            <input type="button" class="bottomBtn" id="perfectionScore" value="View Perfection High Score" onclick="pScore(3);">
+            <input type="button" class="bottomBtn" id="clearPerfectionScore" value="Clear Perfection High Score" onclick="pScore(4);">
+            <a href="index2.html"><input class="bottomBtn" type="button" id="gotoIndex2" value="Go to Distance Training" onclick="location.load('index2.html)"></a>
+        </div>
+        <div id="clefWrapper" onclick='switchClef();'><img id="clefImg"></div>
+        <input onclick="compare('A')" class="noteBtn" id="a" type="button" value="A">
+        <input onclick="compare('B')" class="noteBtn" id="b" type="button" value="B">
+        <input onclick="compare('C')" class="noteBtn" id="c" type="button" value="C">
+        <input onclick="compare('D')" class="noteBtn" id="d" type="button" value="D">
+        <input onclick="compare('E')" class="noteBtn" id="e" type="button" value="E">
+        <input onclick="compare('F')" class="noteBtn" id="f" type="button" value="F">
+        <input onclick="compare('G')" class="noteBtn" id="g" type="button" value="G">
+        
+        
+        <h1 id="perfectionCounter">0</h1>
+    </body>
+</html>

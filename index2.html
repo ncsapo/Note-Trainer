@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/script2.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="sideBar">
+            <img src="sidebar.png" id="sideBarImg" onclick="toggleSideBar()">
+            <input type="button" class="bottomBtn" id="perfectionScore" value="View Perfection High Score" onclick="nScore(3);">
+            <input type="button" class="bottomBtn" id="clearPerfectionScore" value="Clear Perfection High Score" onclick="nScore(4);">
+            <a href="index.html"><input class="bottomBtn" type="button" id="gotoIndex2" value="Go to Note Training" onclick="location.load('index.html)"></a>
+        </div>
+        <div id="clefWrapper"><img id="clefImg" src="treble.png"></div>
+        <input onclick="compare('1')" class="numBtn" id="b1" type="button" value="1">
+        <input onclick="compare('2')" class="numBtn" id="b2" type="button" value="2">
+        <input onclick="compare('3')" class="numBtn" id="b3" type="button" value="3">
+        <input onclick="compare('4')" class="numBtn" id="b4" type="button" value="4">
+        <input onclick="compare('5')" class="numBtn" id="b5" type="button" value="5">
+        <input onclick="compare('6')" class="numBtn" id="b6" type="button" value="6">
+        <input onclick="compare('7')" class="numBtn" id="b7" type="button" value="7">
+        <input onclick="compare('8')" class="numBtn" id="b8" type="button" value="8">
+        
+        
+        <h1 id="perfectionCounter">0</h1>
+    </body>
+</html>
